@@ -55,6 +55,16 @@ Se usa `.env` local (ignorado por Git). Variables clave:
 
 ## 1) Backend (Spring Boot)
 
+Carga variables desde `.env` (PowerShell):
+
+```powershell
+Get-Content ..\\.env | ForEach-Object {
+  if ($_ -match '^\\s*#' -or $_ -notmatch '=') { return }
+  $name, $value = $_ -split '=', 2
+  [System.Environment]::SetEnvironmentVariable($name.Trim(), $value.Trim(), 'Process')
+}
+```
+
 ```powershell
 cd back
 mvn spring-boot:run
