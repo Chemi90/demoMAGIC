@@ -57,6 +57,16 @@ public class ChatService {
         IntentService.IntentResult intentResult = intentService.detect(message, items, request.getCart());
         Intent intent = detectIntent(kb, normalizedMessage);
 
+        if (intent == Intent.PRIVACY) {
+            state.clear();
+            return privacyResponse(lang);
+        }
+
+        if (intent == Intent.CONTACT_INFO) {
+            state.clear();
+            return contactInfoResponse(kb, lang, normalizedMessage);
+        }
+
         ChatResponse pendingFlowReply = handlePendingFlow(state, kb, lang, message, normalizedMessage, intent, intentResult);
         if (pendingFlowReply != null) {
             return pendingFlowReply;
@@ -97,14 +107,6 @@ public class ChatService {
                 "en".equals(lang)
                     ? "Perfect. Let us schedule your appointment. What is the reason for the meeting?"
                     : "Perfecto. Vamos a concertar tu cita. Cual es el motivo de la reunion?"
-            );
-        }
-
-        if (intent == Intent.PRIVACY) {
-            return simpleResponse(
-                "en".equals(lang)
-                    ? "I cannot access or share order details of other people for privacy reasons. If this is your order, share order number or email and I will help you."
-                    : "No puedo acceder ni compartir pedidos de terceras personas por privacidad. Si es tu pedido, dime numero de pedido o email y te ayudo a localizarlo."
             );
         }
 
@@ -202,6 +204,9 @@ public class ChatService {
         }
         if (isPrivacyRequest(normalizedMessage)) {
             return Intent.PRIVACY;
+        }
+        if (asksContactInfo(normalizedMessage)) {
+            return Intent.CONTACT_INFO;
         }
         if (isPersonalRequest(normalizedMessage)) {
             return Intent.PERSONAL;
@@ -328,6 +333,65 @@ public class ChatService {
             }
             sb.append("Si quieres, te envio ubicacion para mapa y te ayudo a concertar una visita.");
         }
+        return simpleResponse(sb.toString().trim());
+    }
+
+    private ChatResponse privacyResponse(String lang) {
+        return simpleResponse(
+            "en".equals(lang)
+                ? "Demo privacy note: avoid sharing sensitive personal data here. This chat is for product and service guidance."
+                : "Nota de privacidad demo: evita compartir datos personales sensibles aqui. Este chat es para orientacion de productos y servicios."
+        );
+    }
+
+    private ChatResponse contactInfoResponse(String kb, String lang, String normalizedMessage) {
+        if (asksDirections(normalizedMessage)) {
+            return directionsResponse(kb, lang, normalizedMessage);
+        }
+
+        KbItem company = findCompanyProfile(kb, List.of());
+        if (company == null) {
+            return outOfScopeResponse(lang, kb);
+        }
+
+        String notes = company.getNotes() == null ? "" : company.getNotes();
+        String address = extractField(notes, "Direccion central:", "Oficina principal:");
+        String phone = extractField(notes, "Telefono:");
+        String email = extractField(notes, "Email:");
+        String schedule = extractField(notes, "Horario:");
+
+        boolean asksWhatsapp = containsAny(normalizedMessage, "whatsapp", "wsp", "wasap");
+        boolean asksHuman = containsAny(normalizedMessage,
+            "persona real", "humano", "humana", "agente", "ventas", "soporte", "responsable", "supervisor", "hablar con",
+            "real person", "human", "agent", "sales", "support", "manager");
+
+        StringBuilder sb = new StringBuilder();
+        if ("en".equals(lang)) {
+            sb.append("Contact details for ").append(kbDisplayName(kb)).append(":\n")
+                .append(address.isBlank() ? "" : "- Address: " + address + "\n")
+                .append(schedule.isBlank() ? "" : "- Schedule: " + schedule + "\n")
+                .append(phone.isBlank() ? "" : "- Phone: " + phone + "\n")
+                .append(email.isBlank() ? "" : "- Email: " + email + "\n");
+            if (asksWhatsapp && !phone.isBlank()) {
+                sb.append("- WhatsApp: available on ").append(phone).append(".\n");
+            }
+            if (asksHuman) {
+                sb.append("If you want, ").append(humanContact(kb, lang)).append(" can contact you directly.");
+            }
+        } else {
+            sb.append("Datos de contacto de ").append(kbDisplayName(kb)).append(":\n")
+                .append(address.isBlank() ? "" : "- Direccion: " + address + "\n")
+                .append(schedule.isBlank() ? "" : "- Horario: " + schedule + "\n")
+                .append(phone.isBlank() ? "" : "- Telefono: " + phone + "\n")
+                .append(email.isBlank() ? "" : "- Email: " + email + "\n");
+            if (asksWhatsapp && !phone.isBlank()) {
+                sb.append("- WhatsApp: disponible en ").append(phone).append(".\n");
+            }
+            if (asksHuman) {
+                sb.append("Si quieres, ").append(humanContact(kb, lang)).append(" te contacta directamente.");
+            }
+        }
+
         return simpleResponse(sb.toString().trim());
     }
 
@@ -921,6 +985,22 @@ public class ChatService {
             "pisos", "locales", "disponibles", "stock", "inventario", "referencia", "availability", "inventory", "units");
     }
 
+    private boolean asksContactInfo(String normalizedMessage) {
+        if (containsAny(normalizedMessage, "mi telefono", "my phone", "mi email", "my email")) {
+            return false;
+        }
+        return asksOfficeLocation(normalizedMessage)
+            || asksDirections(normalizedMessage)
+            || containsAny(normalizedMessage,
+                "whatsapp", "wsp", "wasap", "contacto", "atencion al cliente",
+                "persona real", "humano", "humana", "hablar con", "ventas", "soporte", "supervisor", "responsable",
+                "horario", "a que hora", "abris", "abrir", "cerrar", "cerrais", "cerras",
+                "fin de semana", "fines de semana", "sabado", "domingo", "atendeis", "abierto", "cerrado",
+                "sin cita", "cita previa", "puedo pasar ahora", "pasar ahora", "atenderme hoy",
+                "contact", "customer service", "human", "real person", "talk to", "sales", "support", "manager",
+                "opening hours", "open", "close", "weekend", "available today");
+    }
+
     private boolean asksOfficeLocation(String normalizedMessage) {
         if (containsAny(normalizedMessage, "mi telefono", "my phone", "mi email", "my email")) {
             return false;
@@ -942,8 +1022,15 @@ public class ChatService {
     }
 
     private boolean isPrivacyRequest(String normalizedMessage) {
-        return containsAny(normalizedMessage, "pedido", "pedidos", "order", "orders")
-            && containsAny(normalizedMessage, "juan", "perez", "otra persona", "tercero", "another person", "third party");
+        return containsAny(normalizedMessage,
+            "privacidad", "conversacion privada", "es privada", "rgpd", "gdpr",
+            "datos personales", "guardais mis datos", "guardar mis datos", "compartis mis datos",
+            "borrar mis datos", "que datos teneis", "se guarda lo que escribo",
+            "me esta leyendo una persona", "eres una ia", "eres ia", "ia o humano", "ia o un humano",
+            "ai or human", "human or ai", "are you ai", "are you human",
+            "privacy", "personal data", "store my data", "share my data", "delete my data")
+            || (containsAny(normalizedMessage, "pedido", "pedidos", "order", "orders")
+            && containsAny(normalizedMessage, "juan", "perez", "otra persona", "tercero", "another person", "third party"));
     }
 
     private boolean isPersonalRequest(String normalizedMessage) {
@@ -1154,6 +1241,7 @@ public class ChatService {
         IDENTITY,
         LOCATION,
         DIRECTIONS,
+        CONTACT_INFO,
         APPOINTMENT,
         PROPERTY_SEARCH,
         CATALOG,
