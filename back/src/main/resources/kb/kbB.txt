@@ -1,0 +1,89 @@
+﻿ID: B-01
+TITLE: Diagnóstico de madurez IA operativa
+TYPE: auditoría
+DESCRIPTION: Evaluación de procesos críticos en planta, almacén y servicio técnico para priorizar automatizaciones viables.
+BENEFITS: Hoja de ruta realista; foco en ROI; reducción de iniciativas sin impacto.
+USE_CASES: Empresas industriales y logísticas en fase inicial de adopción IA.
+PRICE: 2.100 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-02
+TITLE: Copiloto de planificación de rutas
+TYPE: app
+DESCRIPTION: Asistente para optimizar rutas, ventanas horarias y cargas según demanda y restricciones operativas.
+BENEFITS: Menos kilómetros improductivos; mejor puntualidad; ahorro en combustible.
+USE_CASES: Operadores logísticos con flota propia o mixta.
+PRICE: 3.400 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-03
+TITLE: Monitor predictivo de mantenimiento
+TYPE: app
+DESCRIPTION: Sistema que analiza telemetría y órdenes históricas para anticipar fallos de equipos y paradas.
+BENEFITS: Menos averías críticas; mayor disponibilidad de activos; planificación preventiva.
+USE_CASES: Plantas con maquinaria intensiva y costes altos por parada.
+PRICE: 4.100 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-04
+TITLE: Automatización documental para operaciones
+TYPE: servicio
+DESCRIPTION: Extracción y validación de datos de albaranes, órdenes de trabajo y partes de intervención.
+BENEFITS: Menos errores manuales; trazabilidad; menor tiempo administrativo.
+USE_CASES: Equipos con alto volumen documental diario.
+PRICE: 1.950 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-05
+TITLE: Asistente IA para SAT y postventa
+TYPE: app
+DESCRIPTION: Chat asistido para técnicos y agentes que consulta procedimientos, repuestos y diagnóstico guiado.
+BENEFITS: Resolución más rápida; consistencia en respuestas; menor escalado innecesario.
+USE_CASES: Empresas con servicio técnico distribuido por zonas.
+PRICE: 2.850 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-06
+TITLE: Formación IA para mandos intermedios
+TYPE: formación
+DESCRIPTION: Taller aplicado a operaciones, calidad y logística para liderar adopción con métricas y gobernanza.
+BENEFITS: Liderazgo interno; mejor coordinación entre áreas; implementación más estable.
+USE_CASES: Organizaciones que requieren alinear jefaturas antes de ejecutar proyectos IA.
+PRICE: 1.350 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-07
+TITLE: Cuadro de control de incidencias en tiempo real
+TYPE: app
+DESCRIPTION: Panel centralizado con alertas de incidencias, SLA y cuellos de botella operativos.
+BENEFITS: Reacción inmediata; priorización por impacto; mejor comunicación con cliente final.
+USE_CASES: Empresas con múltiples turnos y niveles de servicio exigentes.
+PRICE: 2.700 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-08
+TITLE: Optimización de inventario con IA
+TYPE: servicio
+DESCRIPTION: Modelos de previsión de demanda y reposición para minimizar roturas y sobrestock.
+BENEFITS: Mejor disponibilidad; reducción de capital inmovilizado; compras más precisas.
+USE_CASES: Almacenes con estacionalidad y variabilidad en consumo.
+PRICE: 3.050 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-09
+TITLE: Auditoría de ciberseguridad OT/IT
+TYPE: auditoría
+DESCRIPTION: Revisión de exposición de red, accesos remotos y segmentación en entornos de operación industrial.
+BENEFITS: Mitigación de riesgos críticos; continuidad operativa; plan de remediación priorizado.
+USE_CASES: Industria con integración creciente entre sistemas OT e IT.
+PRICE: 3.300 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: B-10
+TITLE: Integración ERP + WMS + analítica IA
+TYPE: servicio
+DESCRIPTION: Conexión de ERP y WMS para explotar datos operativos con cuadros predictivos y alertas accionables.
+BENEFITS: Visión unificada; menor retrabajo; decisiones operativas con datos actualizados.
+USE_CASES: Compañías con sistemas heredados y reporting fragmentado.
+PRICE: 3.650 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
