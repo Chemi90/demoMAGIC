@@ -1,0 +1,46 @@
+﻿{
+  "claim": "We design the beginning of your next star.",
+  "kbLabel": "Knowledge base",
+  "share": "Share demo",
+  "heroTitle": "AI demo for companies that need better sales and operations",
+  "heroSubtitle": "Ask about services, compare options, and prepare a proposal quickly.",
+  "call": "Call",
+  "whatWeDoTitle": "What we do",
+  "chatTitle": "Enterprise AI chat",
+  "typing": "Typing...",
+  "chatPlaceholder": "Write your message...",
+  "send": "Send",
+  "cartTitle": "Temporary cart",
+  "clearCart": "Clear",
+  "estimatedTotal": "Estimated total",
+  "proposalWhatsapp": "Proposal via WhatsApp",
+  "proposalEmail": "Proposal via Email",
+  "cartFab": "Cart",
+  "shareTitle": "Share demo",
+  "shareSubtitle": "Scan the QR code to open this demo on another device.",
+  "close": "Close",
+  "welcome": "Hi! I am Nébula Sur's AI assistant. Ask me to compare services, add or remove items from the cart, and prepare a proposal.",
+  "kbSwitched": "Active base changed to KB {kb}.",
+  "langSwitched": "Language updated.",
+  "cartCleared": "Cart cleared.",
+  "emptyCart": "There are no items in your cart yet.",
+  "fallbackReply": "I could not generate a useful answer. Would you like a specific recommendation?",
+  "serverError": "I could not connect to the backend",
+  "citationsLabel": "References",
+  "proposalIntro": "Cart summary for proposal:",
+  "contactIntro": "Current interest summary:",
+  "serviceCards": [
+    {
+      "title": "Sales automation",
+      "body": "Pre-sales bots, lead follow-up and instant answers to improve conversion rates."
+    },
+    {
+      "title": "Operations assistant",
+      "body": "Internal AI assistant for procedures, incidents and standardized workflows."
+    },
+    {
+      "title": "Executive AI training",
+      "body": "Practical AI enablement for leadership, sales and operations teams."
+    }
+  ]
+}

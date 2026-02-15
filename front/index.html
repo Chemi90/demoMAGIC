@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nébula Sur | Demo IA Empresarial</title>
+  <meta name="description" content="Nébula Sur - Demo empresarial con chat IA, bases de conocimiento y solicitud de propuesta." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Nébula Sur" class="logo" />
+      <div>
+        <h1>Nébula Sur</h1>
+        <p data-i18n="claim">Diseñamos el inicio de tu próxima estrella.</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label>
+        <span data-i18n="kbLabel">Base de conocimiento</span>
+        <select id="kbSelector" aria-label="KB selector">
+          <option value="A">KB A</option>
+          <option value="B">KB B</option>
+        </select>
+      </label>
+
+      <button id="langToggle" class="ghost-btn" type="button">EN</button>
+      <button id="shareBtn" class="ghost-btn" type="button" data-i18n="share">Compartir demo</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 data-i18n="heroTitle">Demo IA para empresas que quieren vender y operar mejor</h2>
+      <p data-i18n="heroSubtitle">
+        Consulta servicios, compara soluciones y prepara una propuesta sin fricción.
+      </p>
+      <div class="contact-row">
+        <a id="whatsappBtn" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer" href="#">WhatsApp</a>
+        <a id="emailBtn" class="contact-btn email" href="#">Email</a>
+        <a id="phoneBtn" class="contact-btn phone" href="tel:+34655309861" data-i18n="call">Llamar</a>
+      </div>
+    </section>
+
+    <section class="what-we-do">
+      <h3 data-i18n="whatWeDoTitle">Qué hacemos</h3>
+      <div id="serviceCards" class="cards"></div>
+    </section>
+
+    <section class="workspace">
+      <article class="chat-card">
+        <header class="section-head">
+          <h3 data-i18n="chatTitle">Chat IA empresarial</h3>
+          <span id="typingStatus" class="typing hidden" data-i18n="typing">Escribiendo...</span>
+        </header>
+
+        <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" type="text" autocomplete="off" required data-i18n-placeholder="chatPlaceholder" placeholder="Escribe tu mensaje..." />
+          <button type="submit" class="primary-btn" data-i18n="send">Enviar</button>
+        </form>
+      </article>
+
+      <aside id="cartPanel" class="cart-card">
+        <header class="section-head">
+          <h3 data-i18n="cartTitle">Carrito temporal</h3>
+          <button id="clearCartBtn" type="button" class="ghost-btn small" data-i18n="clearCart">Vaciar</button>
+        </header>
+
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-total">
+          <span data-i18n="estimatedTotal">Total estimado</span>
+          <strong id="cartTotal">0 €</strong>
+        </div>
+
+        <div class="proposal-actions">
+          <button id="sendProposalWhatsapp" class="primary-btn" type="button" data-i18n="proposalWhatsapp">Propuesta por WhatsApp</button>
+          <button id="sendProposalEmail" class="ghost-btn" type="button" data-i18n="proposalEmail">Propuesta por Email</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <button id="mobileCartFab" class="cart-fab" type="button" data-i18n="cartFab">Carrito</button>
+
+  <dialog id="shareModal" class="share-modal">
+    <h3 data-i18n="shareTitle">Compartir demo</h3>
+    <p data-i18n="shareSubtitle">Escanea el QR para abrir esta demo en otro dispositivo.</p>
+    <img id="qrImage" alt="QR" width="180" height="180" />
+    <button id="closeShareModal" class="ghost-btn" type="button" data-i18n="close">Cerrar</button>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

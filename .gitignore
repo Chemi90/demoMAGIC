@@ -1,0 +1,16 @@
+﻿# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node or frontend leftovers
+node_modules/
+
+# Java
+back/target/
+
+# Local envs
+.env
+front/.env
+back/.env

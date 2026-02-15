@@ -1,0 +1,89 @@
+﻿ID: A-01
+TITLE: Auditoría de conversión para eCommerce
+TYPE: auditoría
+DESCRIPTION: Evaluación completa del embudo de venta, checkout y rendimiento móvil para detectar fricción y pérdida de ventas.
+BENEFITS: Incremento de conversión; reducción de abandono de carrito; priorización rápida de mejoras.
+USE_CASES: Tiendas Shopify o WooCommerce con tráfico estable y estancamiento en ventas.
+PRICE: 1.800 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-02
+TITLE: Chatbot de preventa omnicanal
+TYPE: app
+DESCRIPTION: Asistente IA para web y WhatsApp que responde dudas de catálogo, tiempos de envío y devoluciones en tiempo real.
+BENEFITS: Atención 24/7; menos carga en soporte; más leads cualificados.
+USE_CASES: Marcas con más de 150 consultas semanales y equipo comercial pequeño.
+PRICE: 2.400 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-03
+TITLE: Recomendador inteligente de productos
+TYPE: app
+DESCRIPTION: Motor de recomendaciones basado en comportamiento de navegación, ticket medio y afinidad por categorías.
+BENEFITS: Aumento del valor medio del pedido; cross-selling automático; mejor experiencia de compra.
+USE_CASES: eCommerce con más de 300 SKUs y múltiples categorías.
+PRICE: 3.200 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-04
+TITLE: Automatización de campañas de recuperación
+TYPE: servicio
+DESCRIPTION: Flujos de email y mensajería para recuperar carritos abandonados y reactivar clientes inactivos.
+BENEFITS: Mayor recurrencia; recuperación de ingresos; segmentación automática.
+USE_CASES: Tiendas con altas tasas de abandono y base de clientes histórica.
+PRICE: 1.650 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-05
+TITLE: Cuadro de mando comercial IA
+TYPE: app
+DESCRIPTION: Dashboard en tiempo real con ventas, margen, cohortes y alertas predictivas de caída de demanda.
+BENEFITS: Decisiones rápidas; visibilidad centralizada; menos dependencia de hojas manuales.
+USE_CASES: Equipos de dirección comercial que necesitan lectura diaria de KPIs.
+PRICE: 2.900 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-06
+TITLE: Formación IA para equipos de eCommerce
+TYPE: formación
+DESCRIPTION: Programa práctico para marketing, operaciones y soporte con casos aplicados al canal online.
+BENEFITS: Adopción interna; mayor productividad; criterios compartidos para usar IA.
+USE_CASES: Empresas que lanzan iniciativas de IA por primera vez.
+PRICE: 1.200 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-07
+TITLE: SEO semántico con IA para catálogo
+TYPE: servicio
+DESCRIPTION: Optimización de fichas y categorías usando intención de búsqueda y generación asistida de contenidos.
+BENEFITS: Más tráfico orgánico cualificado; mejora de indexación; ahorro de tiempo editorial.
+USE_CASES: Catálogos amplios con fichas incompletas o duplicadas.
+PRICE: 2.150 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-08
+TITLE: Asistente de pricing dinámico
+TYPE: app
+DESCRIPTION: Sistema que sugiere ajustes de precio según rotación, competencia y estacionalidad.
+BENEFITS: Protección de margen; reacción rápida al mercado; mayor rentabilidad por categoría.
+USE_CASES: Tiendas con alta volatilidad de costes o promociones frecuentes.
+PRICE: 3.750 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-09
+TITLE: Integración CRM + tienda + soporte
+TYPE: servicio
+DESCRIPTION: Unificación de datos entre CRM, plataforma eCommerce y herramienta de soporte para visión 360 del cliente.
+BENEFITS: Mejor seguimiento comercial; menos silos de información; reportes coherentes.
+USE_CASES: PYMEs que gestionan ventas y postventa con herramientas desconectadas.
+PRICE: 2.650 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+
+ID: A-10
+TITLE: Auditoría de seguridad y cumplimiento en tienda online
+TYPE: auditoría
+DESCRIPTION: Revisión de seguridad técnica, gestión de datos y prácticas de cumplimiento aplicables a comercio digital.
+BENEFITS: Reducción de riesgos; confianza del cliente; plan de mitigación priorizado.
+USE_CASES: Tiendas con alto volumen de transacciones y datos personales.
+PRICE: 2.300 €
+NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.

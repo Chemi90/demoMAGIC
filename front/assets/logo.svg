@@ -1,0 +1,23 @@
+﻿<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Nébula Sur">
+  <defs>
+    <linearGradient id="orbit" x1="40" y1="20" x2="200" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A86FF"/>
+      <stop offset="1" stop-color="#240046"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="240" height="240" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+    <ellipse cx="120" cy="120" rx="74" ry="30" stroke="url(#orbit)" stroke-width="6"/>
+    <ellipse cx="120" cy="120" rx="30" ry="74" stroke="url(#orbit)" stroke-width="6" transform="rotate(24 120 120)"/>
+    <ellipse cx="120" cy="120" rx="58" ry="58" stroke="url(#orbit)" stroke-width="4" opacity="0.75"/>
+    <circle cx="120" cy="120" r="20" fill="#3A86FF"/>
+    <circle cx="120" cy="120" r="10" fill="#E8F3FF"/>
+  </g>
+</svg>

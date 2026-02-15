@@ -1,0 +1,46 @@
+﻿{
+  "claim": "Diseñamos el inicio de tu próxima estrella.",
+  "kbLabel": "Base de conocimiento",
+  "share": "Compartir demo",
+  "heroTitle": "Demo IA para empresas que quieren vender y operar mejor",
+  "heroSubtitle": "Consulta servicios, compara soluciones y prepara una propuesta sin fricción.",
+  "call": "Llamar",
+  "whatWeDoTitle": "Qué hacemos",
+  "chatTitle": "Chat IA empresarial",
+  "typing": "Escribiendo...",
+  "chatPlaceholder": "Escribe tu mensaje...",
+  "send": "Enviar",
+  "cartTitle": "Carrito temporal",
+  "clearCart": "Vaciar",
+  "estimatedTotal": "Total estimado",
+  "proposalWhatsapp": "Propuesta por WhatsApp",
+  "proposalEmail": "Propuesta por Email",
+  "cartFab": "Carrito",
+  "shareTitle": "Compartir demo",
+  "shareSubtitle": "Escanea el QR para abrir esta demo en otro dispositivo.",
+  "close": "Cerrar",
+  "welcome": "¡Hola! Soy el asistente IA de Nébula Sur. Puedes pedirme comparar servicios, añadir o quitar artículos del carrito, y preparar una propuesta.",
+  "kbSwitched": "Base activa cambiada a KB {kb}.",
+  "langSwitched": "Idioma actualizado.",
+  "cartCleared": "Carrito vaciado.",
+  "emptyCart": "Aún no hay artículos en el carrito.",
+  "fallbackReply": "No pude generar una respuesta útil. ¿Quieres que te recomiende una solución concreta?",
+  "serverError": "No pude conectar con el backend",
+  "citationsLabel": "Referencias",
+  "proposalIntro": "Resumen del carrito para propuesta:",
+  "contactIntro": "Resumen actual del interés:",
+  "serviceCards": [
+    {
+      "title": "Automatización comercial",
+      "body": "Bots de preventa, seguimiento de leads y respuestas instantáneas para elevar la conversión."
+    },
+    {
+      "title": "Asistente de operaciones",
+      "body": "Consultas internas con IA para procedimientos, incidencias y estandarización de tareas."
+    },
+    {
+      "title": "Formación ejecutiva IA",
+      "body": "Capacitación práctica para equipos de dirección, ventas y operaciones con casos reales."
+    }
+  ]
+}
