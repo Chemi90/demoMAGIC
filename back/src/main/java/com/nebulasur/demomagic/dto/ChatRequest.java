@@ -16,6 +16,9 @@ public class ChatRequest {
     private List<Map<String, Object>> cart = new ArrayList<>();
 
     private String lang = "es";
+    private String sessionId;
+    private String tenantId;
+    private List<ChatMessage> messages = new ArrayList<>();
 
     public String getKb() {
         return kb;
@@ -47,5 +50,29 @@ public class ChatRequest {
 
     public void setLang(String lang) {
         this.lang = lang;
+    }
+
+    public String getSessionId() {
+        return sessionId;
+    }
+
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
+    }
+
+    public String getTenantId() {
+        return tenantId;
+    }
+
+    public void setTenantId(String tenantId) {
+        this.tenantId = tenantId;
+    }
+
+    public List<ChatMessage> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(List<ChatMessage> messages) {
+        this.messages = messages == null ? new ArrayList<>() : messages;
     }
 }

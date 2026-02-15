@@ -2,6 +2,8 @@ package com.nebulasur.demomagic.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.nebulasur.demomagic.dto.ChatMessage;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -89,22 +91,41 @@ public class OpenAiClient {
     }
 
     public Optional<String> complete(String systemPrompt, String userPrompt) {
+        List<ChatMessage> messages = new ArrayList<>();
+        messages.add(new ChatMessage("user", userPrompt));
+        return complete(systemPrompt, messages);
+    }
+
+    public Optional<String> complete(String systemPrompt, List<ChatMessage> messages) {
         if (!isConfigured()) {
             return Optional.empty();
         }
 
         try {
+            ArrayNode messagesNode = objectMapper.createArrayNode()
+                .add(objectMapper.createObjectNode()
+                    .put("role", "system")
+                    .put("content", systemPrompt == null ? "" : systemPrompt));
+
+            if (messages != null) {
+                for (ChatMessage chatMessage : messages) {
+                    if (chatMessage == null) {
+                        continue;
+                    }
+                    String content = chatMessage.getContent() == null ? "" : chatMessage.getContent().trim();
+                    if (content.isBlank()) {
+                        continue;
+                    }
+                    messagesNode.add(objectMapper.createObjectNode()
+                        .put("role", normalizeRole(chatMessage.getRole()))
+                        .put("content", content));
+                }
+            }
+
             JsonNode payload = objectMapper.createObjectNode()
                 .put("model", chatModel)
                 .put("temperature", chatTemperature)
-                .set("messages", objectMapper.createArrayNode()
-                    .add(objectMapper.createObjectNode()
-                        .put("role", "system")
-                        .put("content", systemPrompt))
-                    .add(objectMapper.createObjectNode()
-                        .put("role", "user")
-                        .put("content", userPrompt))
-                );
+                .set("messages", messagesNode);
 
             HttpRequest request = HttpRequest.newBuilder(URI.create(OPENAI_API + "/chat/completions"))
                 .timeout(Duration.ofSeconds(40))
@@ -130,5 +151,15 @@ public class OpenAiClient {
         } catch (IOException e) {
             return Optional.empty();
         }
+    }
+
+    private String normalizeRole(String role) {
+        if ("assistant".equalsIgnoreCase(role)) {
+            return "assistant";
+        }
+        if ("system".equalsIgnoreCase(role)) {
+            return "system";
+        }
+        return "user";
     }
 }

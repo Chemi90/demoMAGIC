@@ -1,0 +1,206 @@
+# Smoke questions for chatbot replay
+hola
+¿Quién me atiende ahora mismo?
+¿Esta conversación es privada?
+¿Dónde está vuestra oficina exactamente?
+¿Podéis atenderme hoy sin cita previa?
+Quiero hablar con una persona real
+¿Tenéis WhatsApp?
+¿Trabajáis los fines de semana?
+¿A qué hora abrís mañana?
+¿Cerráis a mediodía?
+¿Puedo pasar ahora mismo?
+¿Hay cola normalmente?
+¿Tenéis aparcamiento cerca?
+¿Dónde puedo aparcar gratis?
+¿Está lejos del centro?
+¿Cómo llego desde la estación?
+¿Tenéis acceso para personas con movilidad reducida?
+¿Hay ascensor?
+¿En qué planta estáis?
+¿Tenéis varias oficinas o solo esa?
+¿Atendéis fuera de España?
+¿Hacéis envíos internacionales?
+¿Vendéis a particulares o solo a empresas?
+¿Tenéis catálogo online?
+Enséñame todo lo que vendéis
+Busco algo barato
+Busco lo mejor que tengáis
+¿Qué recomendáis para empezar?
+¿Tenéis descuentos ahora mismo?
+¿Hacéis precios especiales por volumen?
+¿Puedo pagar a plazos?
+¿Aceptáis efectivo?
+¿Aceptáis Bizum?
+¿Aceptáis transferencia bancaria?
+¿Emitís factura con IVA?
+¿Hacéis presupuestos sin compromiso?
+¿Cuánto tardáis en responder?
+¿Cuánto tarda un pedido en llegar?
+¿Tenéis entrega urgente?
+¿Puedo recoger en tienda?
+¿Hacéis reservas?
+Quiero cancelar un pedido
+Quiero modificar un pedido
+He recibido algo equivocado
+Quiero devolver un producto
+¿Quién paga los gastos de devolución?
+¿Tenéis garantía?
+¿La garantía cubre mal uso?
+Se ha roto y lo compré hace dos días
+No funciona correctamente
+¿Tenéis servicio técnico?
+¿Reparáis productos?
+¿Vendéis piezas sueltas?
+¿Tenéis stock ahora mismo?
+¿Podéis confirmar disponibilidad?
+¿Podéis avisarme cuando haya stock?
+Necesito algo urgente
+Lo necesito para hoy
+¿Podéis enviarlo hoy mismo?
+¿Trabajáis con mensajería 24h?
+¿Cuál es vuestro producto más vendido?
+¿Cuál es el más caro?
+¿Cuál es el más barato?
+¿Cuál es el más recomendable?
+No sé exactamente lo que necesito
+¿Podéis asesorarme?
+Te explico mi caso…
+Tengo un problema y no sé cómo resolverlo
+¿Qué solución me propones?
+No me convence lo que dices
+¿Hay algo mejor?
+¿Hay alternativas más económicas?
+¿Hay algo equivalente?
+¿Tenéis marcas concretas?
+¿Trabajáis con marcas premium?
+¿Vendéis genéricos?
+¿Qué diferencia hay entre estas opciones?
+¿Vale la pena pagar más?
+¿Tenéis opiniones de clientes?
+¿Tenéis reseñas?
+¿Puedo ver ejemplos?
+¿Tenéis fotos reales?
+¿Podéis enviarme información por correo?
+Apunta mi email
+Apunta mi teléfono
+Llámame más tarde
+Quiero una demostración
+Quiero una reunión
+¿Puede ser online?
+¿Tenéis videollamada?
+¿Usáis Zoom o Teams?
+Quiero cambiar la fecha
+No puedo asistir
+Confírmame la cita
+Recuérdamelo mañana
+¿Puedo hablar con ventas?
+¿Puedo hablar con soporte?
+¿Puedo hablar con un responsable?
+¿Quién es el jefe?
+¿Quién toma decisiones ahí?
+¿Sois una empresa grande?
+¿Cuántos empleados tenéis?
+¿Cuánto tiempo lleváis en el mercado?
+¿Sois de fiar?
+¿Tenéis certificaciones?
+¿Tenéis seguro?
+¿Cumplís normativa europea?
+¿Dónde está registrada la empresa?
+¿Tenéis CIF?
+¿Podéis darme vuestros datos legales?
+¿Guardáis mis datos personales?
+¿Compartís mis datos con terceros?
+Quiero borrar mis datos
+Quiero saber qué datos tenéis sobre mí
+¿Cumplís RGPD?
+¿Qué hacéis con esta conversación?
+¿Se guarda lo que escribo?
+¿Me está leyendo una persona?
+¿Eres una IA o un humano?
+¿Puedes equivocarte?
+¿Puedes mentir?
+¿Sabes quién soy?
+¿Sabes dónde estoy?
+¿Sabes mi número de teléfono?
+¿Cómo sabes esa información?
+¿Puedes recordar lo que te dije antes?
+¿Puedes olvidarlo?
+Cambia al español neutro
+Respóndeme en inglés
+Respóndeme más corto
+Respóndeme con detalles técnicos
+No me hables como robot
+Háblame como si fuera cliente VIP
+Convénceme de comprar
+Véndeme algo
+Hazme una oferta
+¿Puedes hacerme un descuento especial?
+¿Si compro mucho me mejoras el precio?
+¿Hay promociones ocultas?
+Dime el precio real
+Dime el precio sin IVA
+Dime el precio final
+¿Cuánto es lo mínimo que pagaré?
+¿Hay gastos ocultos?
+¿Hay permanencia?
+¿Puedo darme de baja cuando quiera?
+¿Qué pasa si no pago?
+¿Hay penalizaciones?
+¿Puedo cancelar sin coste?
+¿Hay letra pequeña?
+¿Es obligatorio contratar algo más?
+¿Hay packs obligatorios?
+¿Puedo comprar solo una unidad?
+¿Hay pedido mínimo?
+¿Tenéis stock para grandes cantidades?
+Necesito 500 unidades
+Necesito algo personalizado
+¿Hacéis pedidos a medida?
+¿Cuánto tarda un pedido especial?
+¿Se puede acelerar?
+¿Tiene coste extra?
+¿Puedo hablar con el fabricante?
+¿Trabajáis directamente con fábrica?
+¿Importáis productos?
+¿De qué país vienen?
+¿Son originales?
+¿Son compatibles?
+¿Son reacondicionados?
+¿Son nuevos?
+¿Tenéis segunda mano?
+¿Tenéis outlet?
+¿Tenéis productos descatalogados?
+¿Podéis conseguir algo que no tengáis?
+¿Podéis buscarlo por referencia?
+Tengo una referencia concreta
+Tengo una foto del producto
+No sé el nombre exacto
+¿Puedes identificarlo?
+¿Puedes recomendarme algo similar?
+Quiero lo más fiable
+Quiero lo más duradero
+Quiero lo más rápido
+Quiero lo más económico
+Quiero lo mejor calidad-precio
+Sorpréndeme con una recomendación
+No me gusta lo que propones
+Propón algo distinto
+Eso no me sirve
+No estoy satisfecho
+Quiero poner una queja
+¿Dónde reclamo?
+Quiero hoja de reclamaciones
+¿Tenéis atención al cliente?
+Quiero hablar con un supervisor
+¿Puedes transferirme?
+¿Puedes pasarme con alguien?
+¿Estás programado o improvisas?
+¿Quién te ha creado?
+¿Puedes aprender de esta conversación?
+¿Puedes cometer errores?
+¿Puedes repetir lo último que dijiste?
+Resume todo en una frase
+Hazme un resumen de esta conversación
+¿Qué crees que necesito?
+¿Qué harías tú en mi lugar?

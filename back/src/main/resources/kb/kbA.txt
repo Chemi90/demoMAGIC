@@ -5,7 +5,7 @@ DESCRIPTION: Urbania Nexus es una empresa ficticia del sector inmobiliario y con
 BENEFITS: Cliente puede conocer quien es la empresa, su estructura y su cobertura antes de pedir propuesta; transmite confianza comercial desde el primer contacto.
 USE_CASES: Preguntas de presentacion de empresa, numero de empleados, ubicaciones, experiencia, capacidad de ejecucion y foco de negocio.
 PRICE: Sin coste
-NOTES: Direccion central: Calle Orense 18, Madrid. Telefono: +34 910 240 118. Email: contacto@urbanianexus.demo. Sectores principales: inmobiliarias, promotoras, constructoras y empresas de reformas. Ticket medio de proyecto: 18.000 a 240.000 EUR.
+NOTES: Direccion central: Calle Orense 18, Madrid (zona AZCA). Telefono: +34 910 240 118. Email: contacto@urbanianexus.demo. Horario: L-V de 9:30 a 19:00. Sectores principales: inmobiliarias, promotoras, constructoras y empresas de reformas. Ticket medio de proyecto: 18.000 a 240.000 EUR.
 
 ID: A-01
 TITLE: Analisis de mercado inmobiliario por zona

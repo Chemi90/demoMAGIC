@@ -4,6 +4,7 @@ import com.nebulasur.demomagic.dto.ChatAction;
 import com.nebulasur.demomagic.model.KbItem;
 import org.springframework.stereotype.Service;
 
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -21,16 +22,16 @@ public class IntentService {
         KbItem matchedItem = null;
 
         boolean wantsAdd = containsAny(normalized,
-            "añade", "agrega", "agregar", "suma", "incluye", "mete", "add", "include", "put in cart", "add to cart");
+            "anade", "agrega", "agregar", "suma", "incluye", "mete", "add", "include", "put in cart", "add to cart");
 
         boolean wantsRemove = containsAny(normalized,
             "quita", "elimina", "saca", "borra", "remove", "delete", "drop");
 
         boolean wantsClear = containsAny(normalized,
-            "vaciar carrito", "vacía carrito", "limpia carrito", "clear cart", "empty cart");
+            "vaciar carrito", "vacia carrito", "limpia carrito", "clear cart", "empty cart");
 
         boolean wantsShow = containsAny(normalized,
-            "ver carrito", "mostrar carrito", "muéstrame carrito", "show cart", "view cart", "total carrito", "cart total");
+            "ver carrito", "mostrar carrito", "muestrame carrito", "show cart", "view cart", "total carrito", "cart total");
 
         if (wantsAdd || wantsRemove) {
             matchedItem = bestItemMatch(normalized, kbItems);
@@ -138,7 +139,11 @@ public class IntentService {
     }
 
     private String normalize(String text) {
-        return text == null ? "" : text.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9áéíóúñü\\s]", " ").trim();
+        if (text == null) {
+            return "";
+        }
+        String ascii = Normalizer.normalize(text, Normalizer.Form.NFD).replaceAll("\\p{M}", "");
+        return ascii.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9\\s]", " ").replaceAll("\\s+", " ").trim();
     }
 
     private boolean containsAny(String text, String... terms) {
