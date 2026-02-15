@@ -1,4 +1,4 @@
-﻿package com.nebulasur.demomagic.service;
+package com.nebulasur.demomagic.service;
 
 import com.nebulasur.demomagic.dto.ChatAction;
 import com.nebulasur.demomagic.model.KbItem;

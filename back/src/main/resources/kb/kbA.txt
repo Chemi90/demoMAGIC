@@ -1,89 +1,134 @@
-﻿ID: A-01
-TITLE: Auditoría de conversión para eCommerce
-TYPE: auditoría
-DESCRIPTION: Evaluación completa del embudo de venta, checkout y rendimiento móvil para detectar fricción y pérdida de ventas.
-BENEFITS: Incremento de conversión; reducción de abandono de carrito; priorización rápida de mejoras.
-USE_CASES: Tiendas Shopify o WooCommerce con tráfico estable y estancamiento en ventas.
-PRICE: 1.800 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+﻿ID: A-00
+TITLE: Urbania Nexus Inmobiliaria - Perfil corporativo
+TYPE: empresa
+DESCRIPTION: Urbania Nexus es una empresa ficticia del sector inmobiliario y construccion fundada en 2013. Opera en Madrid, Valencia, Sevilla y Malaga. Cuenta con 86 personas en plantilla, 4 oficinas comerciales, 2 equipos de obra propia y una red de 42 colaboradores certificados para reformas y postventa.
+BENEFITS: Cliente puede conocer quien es la empresa, su estructura y su cobertura antes de pedir propuesta; transmite confianza comercial desde el primer contacto.
+USE_CASES: Preguntas de presentacion de empresa, numero de empleados, ubicaciones, experiencia, capacidad de ejecucion y foco de negocio.
+PRICE: Sin coste
+NOTES: Direccion central: Calle Orense 18, Madrid. Telefono: +34 910 240 118. Email: contacto@urbanianexus.demo. Sectores principales: inmobiliarias, promotoras, constructoras y empresas de reformas. Ticket medio de proyecto: 18.000 a 240.000 EUR.
+
+ID: A-01
+TITLE: Analisis de mercado inmobiliario por zona
+TYPE: servicio
+DESCRIPTION: Servicio de inteligencia comercial que estudia oferta, demanda, ticket medio, absorcion por distrito, velocidad de venta y presion de alquiler. Incluye mapa de microzonas, analisis de competidores y recomendacion de producto por tipologia de cliente.
+BENEFITS: Reduce riesgo de lanzar promociones en zonas mal ajustadas; mejora precios de salida; acelera decisiones de inversion.
+USE_CASES: Promotoras con nuevas promociones, inmobiliarias que quieren abrir delegacion, fondos que evalun adquisiciones residenciales.
+PRICE: 3.900 EUR
+NOTES: Entrega en 10 dias habiles. Incluye 1 sesion ejecutiva de 90 minutos.
 
 ID: A-02
-TITLE: Chatbot de preventa omnicanal
-TYPE: app
-DESCRIPTION: Asistente IA para web y WhatsApp que responde dudas de catálogo, tiempos de envío y devoluciones en tiempo real.
-BENEFITS: Atención 24/7; menos carga en soporte; más leads cualificados.
-USE_CASES: Marcas con más de 150 consultas semanales y equipo comercial pequeño.
-PRICE: 2.400 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Captacion digital de propietarios y suelo
+TYPE: servicio
+DESCRIPTION: Sistema multicanal para captar propietarios, comunidades y suelo urbano mediante anuncios geolocalizados, formularios inteligentes y scoring de probabilidad de cierre. Se conecta con CRM para asignacion automatica al equipo comercial.
+BENEFITS: Mas oportunidades cualificadas para captacion; menor coste por lead; mejor productividad de captadores.
+USE_CASES: Inmobiliarias que dependen de referidos, promotoras que buscan suelo en nuevas zonas y constructoras que quieren entrada directa con comunidades.
+PRICE: 2.850 EUR
+NOTES: Implementacion base en 15 dias. Requiere acceso a Meta Ads o Google Ads.
 
 ID: A-03
-TITLE: Recomendador inteligente de productos
+TITLE: Automatizacion de ventas de obra nueva
 TYPE: app
-DESCRIPTION: Motor de recomendaciones basado en comportamiento de navegación, ticket medio y afinidad por categorías.
-BENEFITS: Aumento del valor medio del pedido; cross-selling automático; mejor experiencia de compra.
-USE_CASES: eCommerce con más de 300 SKUs y múltiples categorías.
-PRICE: 3.200 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+DESCRIPTION: Flujo comercial para promociones que automatiza respuesta inicial, envio de brochure, reserva de visita, recordatorios y seguimiento de objeciones. Incluye panel de embudo por asesor y alertas cuando un lead esta listo para cerrar.
+BENEFITS: Menos tiempo de respuesta, mayor tasa de visita agendada, seguimiento constante sin perder leads.
+USE_CASES: Promociones con mas de 120 leads mensuales y equipo comercial reducido.
+PRICE: 4.600 EUR
+NOTES: Incluye 2 automatizaciones por promocion y plantillas de seguimiento comercial.
 
 ID: A-04
-TITLE: Automatización de campañas de recuperación
-TYPE: servicio
-DESCRIPTION: Flujos de email y mensajería para recuperar carritos abandonados y reactivar clientes inactivos.
-BENEFITS: Mayor recurrencia; recuperación de ingresos; segmentación automática.
-USE_CASES: Tiendas con altas tasas de abandono y base de clientes histórica.
-PRICE: 1.650 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: CRM inmobiliario integrado con WhatsApp y email
+TYPE: app
+DESCRIPTION: Configuracion de CRM para centralizar historial de cliente, inmuebles, documentos, visitas y acuerdos. Integracion con WhatsApp Business y email para trazabilidad completa de conversaciones comerciales.
+BENEFITS: Vista 360 del cliente; menos fugas de informacion; control de estado por operacion.
+USE_CASES: Equipos que gestionan ventas por hojas de calculo o herramientas no conectadas.
+PRICE: 3.250 EUR
+NOTES: Incluye migracion inicial de datos y cuadro de mando de direccion comercial.
 
 ID: A-05
-TITLE: Cuadro de mando comercial IA
+TITLE: Lead scoring para comprador e inversor
 TYPE: app
-DESCRIPTION: Dashboard en tiempo real con ventas, margen, cohortes y alertas predictivas de caída de demanda.
-BENEFITS: Decisiones rápidas; visibilidad centralizada; menos dependencia de hojas manuales.
-USE_CASES: Equipos de dirección comercial que necesitan lectura diaria de KPIs.
-PRICE: 2.900 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+DESCRIPTION: Modelo de puntuacion de leads por presupuesto, urgencia, perfil de compra, interes por zona y probabilidad de financiacion. Prioriza automaticamente los contactos con mayor probabilidad de conversion.
+BENEFITS: Equipo comercial enfocado en oportunidades reales; aumento de cierres por agente.
+USE_CASES: Inmobiliarias con alto volumen de consultas y baja tasa de cierre en primera visita.
+PRICE: 2.700 EUR
+NOTES: Requiere historico minimo de 300 leads para calibracion optima.
 
 ID: A-06
-TITLE: Formación IA para equipos de eCommerce
-TYPE: formación
-DESCRIPTION: Programa práctico para marketing, operaciones y soporte con casos aplicados al canal online.
-BENEFITS: Adopción interna; mayor productividad; criterios compartidos para usar IA.
-USE_CASES: Empresas que lanzan iniciativas de IA por primera vez.
-PRICE: 1.200 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Chatbot para compradores, vendedores e inversores
+TYPE: app
+DESCRIPTION: Asistente conversacional que resuelve dudas sobre producto, plazos de obra, condiciones de reserva, calidades, reformas y rentabilidad esperada. Ofrece rutas de conversacion distintas por tipo de cliente.
+BENEFITS: Atencion 24/7; mejor experiencia de preventa; clasificacion automatica de intencion comercial.
+USE_CASES: Empresas con alto volumen de preguntas repetitivas en web y WhatsApp.
+PRICE: 2.200 EUR
+NOTES: Entrenamiento inicial con FAQ, argumentarios y politicas comerciales del cliente.
 
 ID: A-07
-TITLE: SEO semántico con IA para catálogo
+TITLE: Tasacion asistida por IA y comparables
 TYPE: servicio
-DESCRIPTION: Optimización de fichas y categorías usando intención de búsqueda y generación asistida de contenidos.
-BENEFITS: Más tráfico orgánico cualificado; mejora de indexación; ahorro de tiempo editorial.
-USE_CASES: Catálogos amplios con fichas incompletas o duplicadas.
-PRICE: 2.150 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+DESCRIPTION: Motor de estimacion de valor con comparables de mercado, variables de zona, estado del activo y potencial de reforma. Entrega rango de precio recomendado para venta o captacion.
+BENEFITS: Valoraciones mas consistentes; argumentos claros para negociar mandato y precio.
+USE_CASES: Captadores, gerentes de oficina y equipos de inversion residencial.
+PRICE: 1.980 EUR
+NOTES: Informe por activo o bono mensual para cartera de captacion.
 
 ID: A-08
-TITLE: Asistente de pricing dinámico
+TITLE: Prediccion de demanda y velocidad de venta
 TYPE: app
-DESCRIPTION: Sistema que sugiere ajustes de precio según rotación, competencia y estacionalidad.
-BENEFITS: Protección de margen; reacción rápida al mercado; mayor rentabilidad por categoría.
-USE_CASES: Tiendas con alta volatilidad de costes o promociones frecuentes.
-PRICE: 3.750 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+DESCRIPTION: Modelo predictivo que estima absorcion mensual de unidades por zona y tipologia. Muestra escenarios conservador, base y agresivo para planificar pricing y calendario comercial.
+BENEFITS: Mejor control financiero del lanzamiento; ajustes de estrategia antes de perder margen.
+USE_CASES: Proyectos de obra nueva con fases de comercializacion.
+PRICE: 4.250 EUR
+NOTES: Se recomienda actualizar datos cada 30 dias en mercados con alta variacion.
 
 ID: A-09
-TITLE: Integración CRM + tienda + soporte
+TITLE: Programa de reformas llave en mano
 TYPE: servicio
-DESCRIPTION: Unificación de datos entre CRM, plataforma eCommerce y herramienta de soporte para visión 360 del cliente.
-BENEFITS: Mejor seguimiento comercial; menos silos de información; reportes coherentes.
-USE_CASES: PYMEs que gestionan ventas y postventa con herramientas desconectadas.
-PRICE: 2.650 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+DESCRIPTION: Gestion integral de reforma residencial o comercial: diagnostico tecnico, presupuesto, cronograma, ejecucion, control de calidad y entrega final. Incluye opcion de seguimiento digital de obra para cliente.
+BENEFITS: Un solo interlocutor; tiempos controlados; reduccion de desviaciones de coste.
+USE_CASES: Inversores que compran para reformar y alquilar, comunidades y propietarios con reforma integral.
+PRICE: Desde 14.000 EUR
+NOTES: Presupuesto final segun metros cuadrados, calidades y complejidad estructural.
 
 ID: A-10
-TITLE: Auditoría de seguridad y cumplimiento en tienda online
-TYPE: auditoría
-DESCRIPTION: Revisión de seguridad técnica, gestión de datos y prácticas de cumplimiento aplicables a comercio digital.
-BENEFITS: Reducción de riesgos; confianza del cliente; plan de mitigación priorizado.
-USE_CASES: Tiendas con alto volumen de transacciones y datos personales.
-PRICE: 2.300 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Consultoria de licencias y viabilidad urbanistica
+TYPE: servicio
+DESCRIPTION: Revision de normativas locales, compatibilidad de uso, licencias y requisitos tecnicos para ejecutar obra o cambio de uso. Define riesgos y plan de tramites por proyecto.
+BENEFITS: Evita bloqueos administrativos; reduce sorpresas legales; acelera inicio de obra.
+USE_CASES: Proyectos de rehabilitacion, promociones pequenas y cambios de uso residencial/comercial.
+PRICE: 2.300 EUR
+NOTES: No sustituye asesoria juridica formal; se coordina con despacho del cliente si existe.
+
+ID: A-11
+TITLE: Casos de exito ficticios Urbania Nexus
+TYPE: caso
+DESCRIPTION: Caso 1: promotora en Valencia incremento 32 por ciento las reservas en 4 meses con automatizacion de seguimiento. Caso 2: inmobiliaria de Sevilla redujo 41 por ciento el tiempo de cierre al implantar lead scoring. Caso 3: empresa de reformas en Madrid mejoro margen bruto en 18 por ciento con presupuestacion asistida.
+BENEFITS: Ayuda al cliente a visualizar resultados potenciales y ROI por linea de servicio.
+USE_CASES: Preguntas de referencia, evidencia comercial y comparativas de impacto.
+PRICE: Sin coste
+NOTES: Resultados ficticios para demo; se usan como ejemplo orientativo.
+
+ID: A-12
+TITLE: Planes comerciales y condiciones de contratacion
+TYPE: plan
+DESCRIPTION: Plan Start 1.950 EUR: diagnostico + chatbot base + 1 automatizacion. Plan Growth 4.900 EUR: CRM integrado + scoring + 3 automatizaciones. Plan Scale 8.500 EUR: todo lo anterior + prediccion de demanda + consultoria mensual de direccion comercial.
+BENEFITS: Facilita elegir nivel de inversion segun madurez y objetivos de ventas.
+USE_CASES: Clientes que piden paquetes cerrados, comparativa de alcance o presupuesto inicial.
+PRICE: Desde 1.950 EUR
+NOTES: Permanencia minima de 3 meses solo para servicios recurrentes de optimizacion.
+
+ID: A-13
+TITLE: SLA, soporte y tiempos de implantacion
+TYPE: soporte
+DESCRIPTION: Soporte operativo de lunes a viernes 09:00 a 19:00. Incidencias criticas con respuesta en menos de 4 horas habiles. Mesa de mejora mensual con KPI de leads, visitas, ratio de cierre y tiempo de respuesta comercial.
+BENEFITS: Seguridad operativa y mejora continua despues del lanzamiento.
+USE_CASES: Clientes que preguntan por mantenimiento, soporte y nivel de servicio postventa.
+PRICE: 690 EUR/mes
+NOTES: Opcion premium 24/7 para promociones de alto volumen.
+
+ID: A-14
+TITLE: FAQ comercial y objeciones frecuentes
+TYPE: faq
+DESCRIPTION: Objecion 1 precio: se trabaja por fases para empezar con impacto rapido. Objecion 2 tiempo: hay implementaciones express en 10 a 20 dias. Objecion 3 adopcion interna: incluye onboarding por roles y guias operativas. Objecion 4 integraciones: se conecta con CRM, portales y herramientas comunes de marketing.
+BENEFITS: Responde dudas clave y acelera decision de compra.
+USE_CASES: Conversaciones de preventa donde el cliente necesita seguridad antes de avanzar.
+PRICE: Sin coste
+NOTES: Cierre recomendado: proponer reunion de diagnostico de 45 minutos con objetivos y presupuesto.

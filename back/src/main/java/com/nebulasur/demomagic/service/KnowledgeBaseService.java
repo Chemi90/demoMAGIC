@@ -1,4 +1,4 @@
-﻿package com.nebulasur.demomagic.service;
+package com.nebulasur.demomagic.service;
 
 import com.nebulasur.demomagic.model.KbItem;
 import jakarta.annotation.PostConstruct;
@@ -35,6 +35,7 @@ public class KnowledgeBaseService {
     public void init() throws IOException {
         kbItems.put("A", loadItems("kb/kbA.txt"));
         kbItems.put("B", loadItems("kb/kbB.txt"));
+        kbItems.put("C", loadItems("kb/kbC.txt"));
 
         if (!openAiClient.isConfigured()) {
             return;
@@ -61,12 +62,18 @@ public class KnowledgeBaseService {
 
         Optional<List<Double>> queryVector = openAiClient.embed(query);
         Map<String, List<Double>> vectors = kbVectors.getOrDefault(normalizeKb(kb), Map.of());
+        boolean vectorMode = queryVector.isPresent() && !vectors.isEmpty();
 
         return items.stream()
             .map(item -> {
-                double score = queryVector
-                    .flatMap(qv -> Optional.ofNullable(vectors.get(item.getId())).map(iv -> cosineSimilarity(qv, iv)))
-                    .orElseGet(() -> lexicalScore(query, buildEmbeddingText(item)));
+                double score;
+                if (vectorMode) {
+                    score = Optional.ofNullable(vectors.get(item.getId()))
+                        .map(iv -> cosineSimilarity(queryVector.get(), iv))
+                        .orElse(-1.0);
+                } else {
+                    score = lexicalScore(query, buildEmbeddingText(item));
+                }
                 return new SearchMatch(item, score);
             })
             .sorted(Comparator.comparingDouble(SearchMatch::score).reversed())
@@ -82,7 +89,13 @@ public class KnowledgeBaseService {
     }
 
     private String normalizeKb(String kb) {
-        return "B".equalsIgnoreCase(kb) ? "B" : "A";
+        if ("B".equalsIgnoreCase(kb)) {
+            return "B";
+        }
+        if ("C".equalsIgnoreCase(kb)) {
+            return "C";
+        }
+        return "A";
     }
 
     private List<KbItem> loadItems(String classpathFile) throws IOException {
@@ -93,7 +106,7 @@ public class KnowledgeBaseService {
         Map<String, String> fields = new HashMap<>();
 
         for (String rawLine : text.split("\\r?\\n")) {
-            String line = rawLine.trim();
+            String line = rawLine.replace("\uFEFF", "").trim();
             if (line.isEmpty()) {
                 continue;
             }
@@ -121,12 +134,12 @@ public class KnowledgeBaseService {
     private KbItem toItem(Map<String, String> fields) {
         KbItem item = new KbItem();
         item.setId(fields.getOrDefault("ID", "N/A"));
-        item.setTitle(fields.getOrDefault("TITLE", "Sin título"));
+        item.setTitle(fields.getOrDefault("TITLE", "Sin titulo"));
         item.setType(fields.getOrDefault("TYPE", "servicio"));
         item.setDescription(fields.getOrDefault("DESCRIPTION", ""));
         item.setBenefits(fields.getOrDefault("BENEFITS", ""));
         item.setUseCases(fields.getOrDefault("USE_CASES", ""));
-        item.setPrice(fields.getOrDefault("PRICE", "0 €"));
+        item.setPrice(fields.getOrDefault("PRICE", "0 EUR"));
         item.setNotes(fields.getOrDefault("NOTES", ""));
         return item;
     }
@@ -180,7 +193,7 @@ public class KnowledgeBaseService {
         }
 
         return Arrays.stream(text.toLowerCase(Locale.ROOT)
-                .replaceAll("[^a-z0-9áéíóúñü\\s]", " ")
+                .replaceAll("[^a-z0-9\\s]", " ")
                 .split("\\s+"))
             .filter(token -> token.length() > 2)
             .collect(Collectors.toCollection(HashSet::new));

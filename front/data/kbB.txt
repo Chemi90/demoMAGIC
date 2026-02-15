@@ -1,89 +1,134 @@
-﻿ID: B-01
-TITLE: Diagnóstico de madurez IA operativa
-TYPE: auditoría
-DESCRIPTION: Evaluación de procesos críticos en planta, almacén y servicio técnico para priorizar automatizaciones viables.
-BENEFITS: Hoja de ruta realista; foco en ROI; reducción de iniciativas sin impacto.
-USE_CASES: Empresas industriales y logísticas en fase inicial de adopción IA.
-PRICE: 2.100 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+﻿ID: B-00
+TITLE: LeadWave Growth Marketing - Perfil corporativo
+TYPE: empresa
+DESCRIPTION: LeadWave Growth es una empresa ficticia especializada en marketing, publicidad y ventas. Fue fundada en 2017 y opera para clientes B2B y B2C en Espana y Latam. Equipo de 64 especialistas entre growth, paid media, automatizacion, copy, BI comercial y inside sales.
+BENEFITS: Entrega una vision completa de capacidades y experiencia antes de pasar a propuesta.
+USE_CASES: Preguntas de presentacion, equipo, especialidades, cobertura geografica y nivel de experiencia sectorial.
+PRICE: Sin coste
+NOTES: Oficina principal: Avenida Diagonal 487, Barcelona. Telefono: +34 931 880 225. Email: hola@leadwavegrowth.demo. Verticales habituales: ecommerce, SaaS, educacion, salud privada, servicios profesionales y retail.
+
+ID: B-01
+TITLE: Generacion de leads con IA multicanal
+TYPE: servicio
+DESCRIPTION: Diseno y ejecucion de estrategia de captacion con IA en Google, Meta, LinkedIn y outbound inteligente. Incluye segmentacion por intent signals, enriquecimiento de datos y scoring en tiempo real para priorizar oportunidades comerciales.
+BENEFITS: Aumento de leads cualificados; menor coste por adquisicion; pipeline mas predecible.
+USE_CASES: Empresas con necesidad de crecimiento acelerado y equipos de ventas que requieren leads listos para trabajar.
+PRICE: 3.400 EUR
+NOTES: Setup inicial de 21 dias y optimizacion quincenal.
 
 ID: B-02
-TITLE: Copiloto de planificación de rutas
+TITLE: Copywriting automatico para anuncios y landings
 TYPE: app
-DESCRIPTION: Asistente para optimizar rutas, ventanas horarias y cargas según demanda y restricciones operativas.
-BENEFITS: Menos kilómetros improductivos; mejor puntualidad; ahorro en combustible.
-USE_CASES: Operadores logísticos con flota propia o mixta.
-PRICE: 3.400 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+DESCRIPTION: Motor de copy asistido por IA para crear variantes de anuncios, titulares, propuestas de valor, secuencias de email y guiones de venta. Entrena tono por marca y aplica aprendizajes de conversion por segmento.
+BENEFITS: Produccion rapida de creatividades; mensajes mas alineados al cliente ideal; mejora continua por test A/B.
+USE_CASES: Equipos de marketing que publican muchas campanas y necesitan escalar contenido sin perder calidad.
+PRICE: 2.100 EUR
+NOTES: Incluye libreria inicial de 120 piezas de copy por trimestre.
 
 ID: B-03
-TITLE: Monitor predictivo de mantenimiento
-TYPE: app
-DESCRIPTION: Sistema que analiza telemetría y órdenes históricas para anticipar fallos de equipos y paradas.
-BENEFITS: Menos averías críticas; mayor disponibilidad de activos; planificación preventiva.
-USE_CASES: Plantas con maquinaria intensiva y costes altos por parada.
-PRICE: 4.100 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Segmentacion predictiva de audiencias
+TYPE: servicio
+DESCRIPTION: Modelo de segmentacion basado en comportamiento, valor potencial y probabilidad de compra. Crea clusters accionables para paid media, email y SDR.
+BENEFITS: Menor desperdicio publicitario; mensajes mas relevantes; mayor conversion por segmento.
+USE_CASES: Marcas con base de datos amplia pero baja activacion comercial.
+PRICE: 2.950 EUR
+NOTES: Requiere historico de CRM o analitica minima de 6 meses.
 
 ID: B-04
-TITLE: Automatización documental para operaciones
-TYPE: servicio
-DESCRIPTION: Extracción y validación de datos de albaranes, órdenes de trabajo y partes de intervención.
-BENEFITS: Menos errores manuales; trazabilidad; menor tiempo administrativo.
-USE_CASES: Equipos con alto volumen documental diario.
-PRICE: 1.950 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Analisis de campanas 360 con atribucion
+TYPE: app
+DESCRIPTION: Dashboard ejecutivo que integra datos de campañas, embudo comercial y ventas para medir CAC, ROAS, LTV y payback por canal. Incluye alertas de desviacion de rendimiento.
+BENEFITS: Decisiones de inversion basadas en rentabilidad real; visibilidad de punta a punta.
+USE_CASES: Direcciones de marketing y ventas que necesitan alinear presupuesto con ingresos.
+PRICE: 3.200 EUR
+NOTES: Entrega en 3 semanas con conectores a plataformas principales.
 
 ID: B-05
-TITLE: Asistente IA para SAT y postventa
-TYPE: app
-DESCRIPTION: Chat asistido para técnicos y agentes que consulta procedimientos, repuestos y diagnóstico guiado.
-BENEFITS: Resolución más rápida; consistencia en respuestas; menor escalado innecesario.
-USE_CASES: Empresas con servicio técnico distribuido por zonas.
-PRICE: 2.850 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Telemarketing asistido por IA
+TYPE: servicio
+DESCRIPTION: Sistema de apoyo para equipos de llamadas: guiones dinamicos por perfil, deteccion de objeciones, resumen automatico de llamada y proximo paso recomendado para cierre.
+BENEFITS: Mas conversion por agente; llamadas mas consistentes; menor curva de aprendizaje.
+USE_CASES: Empresas con equipos de inside sales o call center comercial.
+PRICE: 2.450 EUR
+NOTES: Incluye playbook de 30 objeciones frecuentes y respuesta sugerida.
 
 ID: B-06
-TITLE: Formación IA para mandos intermedios
-TYPE: formación
-DESCRIPTION: Taller aplicado a operaciones, calidad y logística para liderar adopción con métricas y gobernanza.
-BENEFITS: Liderazgo interno; mejor coordinación entre áreas; implementación más estable.
-USE_CASES: Organizaciones que requieren alinear jefaturas antes de ejecutar proyectos IA.
-PRICE: 1.350 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Automatizacion del pipeline comercial
+TYPE: app
+DESCRIPTION: Flujos para MQL, SQL, oportunidades y seguimiento post-demo con tareas automaticas, secuencias de contacto y scoring por intencion de compra.
+BENEFITS: Menos oportunidades perdidas; mayor velocidad de cierre; control de cada etapa del embudo.
+USE_CASES: Equipos que trabajan CRM pero sin reglas de automatizacion ni prioridades claras.
+PRICE: 3.750 EUR
+NOTES: Integrable con HubSpot, Salesforce y Pipedrive.
 
 ID: B-07
-TITLE: Cuadro de control de incidencias en tiempo real
-TYPE: app
-DESCRIPTION: Panel centralizado con alertas de incidencias, SLA y cuellos de botella operativos.
-BENEFITS: Reacción inmediata; priorización por impacto; mejor comunicación con cliente final.
-USE_CASES: Empresas con múltiples turnos y niveles de servicio exigentes.
-PRICE: 2.700 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: CRO para landings y funnels de venta
+TYPE: servicio
+DESCRIPTION: Optimizacion de conversion en paginas clave con test A/B, mapas de calor, analisis de friccion y rediseno de propuesta de valor por etapa de funnel.
+BENEFITS: Mayor ratio de registro o demo; mejor rendimiento del trafico pagado.
+USE_CASES: Campanas con buen volumen de trafico pero baja conversion final.
+PRICE: 2.680 EUR
+NOTES: Sprint inicial de 30 dias con backlog priorizado por impacto.
 
 ID: B-08
-TITLE: Optimización de inventario con IA
-TYPE: servicio
-DESCRIPTION: Modelos de previsión de demanda y reposición para minimizar roturas y sobrestock.
-BENEFITS: Mejor disponibilidad; reducción de capital inmovilizado; compras más precisas.
-USE_CASES: Almacenes con estacionalidad y variabilidad en consumo.
-PRICE: 3.050 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Revenue intelligence y forecast comercial
+TYPE: app
+DESCRIPTION: Modelo de prediccion de ingresos por canal, producto y segmento. Estima cierre mensual y detecta riesgos tempranos en pipeline.
+BENEFITS: Planeacion comercial mas fiable; anticipacion de desviaciones; mejor coordinacion marketing-ventas.
+USE_CASES: Empresas en crecimiento con objetivos trimestrales exigentes.
+PRICE: 4.400 EUR
+NOTES: Actualizacion semanal recomendada para equipos de venta activos.
 
 ID: B-09
-TITLE: Auditoría de ciberseguridad OT/IT
-TYPE: auditoría
-DESCRIPTION: Revisión de exposición de red, accesos remotos y segmentación en entornos de operación industrial.
-BENEFITS: Mitigación de riesgos críticos; continuidad operativa; plan de remediación priorizado.
-USE_CASES: Industria con integración creciente entre sistemas OT e IT.
-PRICE: 3.300 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Formacion en ventas consultivas con IA
+TYPE: formacion
+DESCRIPTION: Programa practico para SDR, closers y account managers: discovery, storytelling de valor, manejo de objeciones, negociacion y cierre asistido por IA.
+BENEFITS: Equipo comercial mas seguro; mejor tasa de avance entre etapas; discurso unificado.
+USE_CASES: Organizaciones con rotacion comercial o expansion de equipo.
+PRICE: 1.600 EUR
+NOTES: Formato bootcamp de 12 horas + seguimiento de desempeño 30 dias.
 
 ID: B-10
-TITLE: Integración ERP + WMS + analítica IA
-TYPE: servicio
-DESCRIPTION: Conexión de ERP y WMS para explotar datos operativos con cuadros predictivos y alertas accionables.
-BENEFITS: Visión unificada; menor retrabajo; decisiones operativas con datos actualizados.
-USE_CASES: Compañías con sistemas heredados y reporting fragmentado.
-PRICE: 3.650 €
-NOTES: Importe orientativo. Puede variar según el alcance y lo acordado en reunión.
+TITLE: Casos de exito ficticios LeadWave Growth
+TYPE: caso
+DESCRIPTION: Caso 1 SaaS B2B: +54 por ciento SQL en 5 meses con segmentacion predictiva y outbound asistido. Caso 2 retail: -27 por ciento CAC y +22 por ciento ROAS tras rediseno de funnel y copy IA. Caso 3 formacion online: +38 por ciento cierres telefonicos con telemarketing asistido.
+BENEFITS: Aporta prueba de impacto y facilita priorizar servicios por objetivo.
+USE_CASES: Clientes que piden evidencia de ROI antes de contratar.
+PRICE: Sin coste
+NOTES: Datos ficticios para demostracion comercial.
+
+ID: B-11
+TITLE: Planes de servicio y modelo de precios
+TYPE: plan
+DESCRIPTION: Plan Launch 2.200 EUR: copy IA + dashboard basico + 1 flujo CRM. Plan Growth 5.400 EUR: leads multicanal + segmentacion + pipeline automatizado. Plan Performance 9.200 EUR: todo lo anterior + revenue intelligence + mesa de growth semanal.
+BENEFITS: Claridad de alcance e inversion por nivel de madurez comercial.
+USE_CASES: Clientes que quieren comparar paquetes antes de definir roadmap.
+PRICE: Desde 2.200 EUR
+NOTES: Servicios de medios pagados pueden incluir fee variable por inversion publicitaria.
+
+ID: B-12
+TITLE: SLA, soporte y gobierno de campanas
+TYPE: soporte
+DESCRIPTION: Soporte de lunes a viernes 08:30 a 19:30. Incidencias criticas en menos de 3 horas habiles. Reuniones semanales de performance con acciones y responsables. Informe mensual de resultados con foco en ingresos.
+BENEFITS: Continuidad operativa y mejora sistematica del rendimiento comercial.
+USE_CASES: Empresas que necesitan disciplina de ejecucion y reporting continuo.
+PRICE: 780 EUR/mes
+NOTES: Opcion enterprise con guardias en fines de semana para campañas de alto trafico.
+
+ID: B-13
+TITLE: FAQ comercial y manejo de objeciones
+TYPE: faq
+DESCRIPTION: Objecion 1 no tenemos tiempo: se ejecuta por sprints con entregables cortos. Objecion 2 no tenemos datos limpios: se incluye fase de saneamiento y criterios de medicion. Objecion 3 no queremos depender de IA: se documentan playbooks y controles humanos. Objecion 4 presupuesto limitado: se priorizan palancas de impacto rapido.
+BENEFITS: Reduce friccion en preventa y acelera decisiones de contratacion.
+USE_CASES: Conversaciones con direccion general, marketing manager o lider comercial.
+PRICE: Sin coste
+NOTES: Cierre recomendado: agendar discovery call de 45 minutos para definir metas, canales y presupuesto.
+
+ID: B-14
+TITLE: Roadmap de implantacion en 90 dias
+TYPE: roadmap
+DESCRIPTION: Fase 1 semanas 1 a 3: auditoria de datos, oferta y embudo. Fase 2 semanas 4 a 8: lanzamiento de campanas, copys y automatizaciones clave. Fase 3 semanas 9 a 12: optimizacion por KPI, escalado y plan trimestral de crecimiento.
+BENEFITS: Da visibilidad de tiempos, hitos y responsables desde el inicio.
+USE_CASES: Clientes que piden calendario detallado para aprobacion interna.
+PRICE: Incluido en planes Growth y Performance
+NOTES: Entrega adicional de matriz de riesgos y plan de mitigacion.

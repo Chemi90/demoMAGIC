@@ -42,13 +42,13 @@ async function init() {
   await setLanguage("es");
   renderCart();
   updateContactLinks();
-  appendMessage("bot", state.i18n.welcome);
+  appendMessage("bot", buildWelcomeMessage());
 }
 
 function bindEvents() {
   refs.kbSelector.addEventListener("change", () => {
     state.kb = refs.kbSelector.value;
-    appendMessage("meta", state.i18n.kbSwitched.replace("{kb}", state.kb));
+    appendMessage("bot", `${state.i18n.kbSwitched.replace("{kbName}", getKbName(state.kb))}\n${buildWelcomeMessage()}`);
   });
 
   refs.langToggle.addEventListener("click", async () => {
@@ -161,10 +161,6 @@ async function sendMessage(message) {
     }
 
     appendMessage("bot", data.reply || state.i18n.fallbackReply);
-
-    if (Array.isArray(data.citations) && data.citations.length > 0) {
-      appendMessage("meta", `${state.i18n.citationsLabel}: ${data.citations.join(", ")}`);
-    }
   } catch (error) {
     appendMessage("bot", `${state.i18n.serverError} (${error.message})`);
   } finally {
@@ -260,9 +256,10 @@ function cartSummaryText() {
 }
 
 function buildWhatsappLink(isProposal) {
+  const selectedCompany = getKbName(state.kb);
   const base = state.lang === "es"
-    ? "Hola, he visto la demo de Nébula Sur y me interesa ampliar información. ¿Podemos agendar una reunión? Mi empresa es: ____"
-    : "Hi, I saw the Nébula Sur demo and I’d like more information. Can we schedule a meeting? My company is: ____";
+    ? `Hola, he visto la demo de Nébula Sur y me interesa ampliar informacion de ${selectedCompany}. ¿Podemos agendar una reunion? Mi empresa es: ____`
+    : `Hi, I saw the Nébula Sur demo and I want more information about ${selectedCompany}. Can we schedule a meeting? My company is: ____`;
 
   const header = isProposal
     ? state.i18n.proposalIntro
@@ -285,6 +282,26 @@ function updateContactLinks() {
   refs.whatsappBtn.href = buildWhatsappLink(false);
   refs.emailBtn.href = buildMailtoLink();
   refs.phoneBtn.href = `tel:${CONTACT.phone}`;
+}
+
+function getKbName(kb) {
+  if (!state.i18n) return kb;
+  if (kb === "B") return state.i18n.kbNameB || "B";
+  if (kb === "C") return state.i18n.kbNameC || "C";
+  return state.i18n.kbNameA || "A";
+}
+
+function getAgentName(kb) {
+  if (kb === "B") return state.lang === "es" ? "Diego Martín" : "Diego Martin";
+  if (kb === "C") return state.lang === "es" ? "Marta Velasco" : "Marta Velasco";
+  return state.lang === "es" ? "Laura Serrano" : "Laura Serrano";
+}
+
+function buildWelcomeMessage() {
+  const template = state.i18n.welcomeTemplate || "";
+  return template
+    .replace("{agentName}", getAgentName(state.kb))
+    .replace("{kbName}", getKbName(state.kb));
 }
 
 function appendMessage(role, text) {

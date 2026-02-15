@@ -1,4 +1,4 @@
-﻿package com.nebulasur.demomagic.service;
+package com.nebulasur.demomagic.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,17 +24,20 @@ public class OpenAiClient {
     private final ObjectMapper objectMapper;
     private final String apiKey;
     private final String chatModel;
+    private final double chatTemperature;
     private final String embeddingModel;
 
     public OpenAiClient(
         ObjectMapper objectMapper,
         @Value("${OPENAI_API_KEY:}") String apiKey,
         @Value("${openai.chat.model:gpt-4o-mini}") String chatModel,
+        @Value("${openai.chat.temperature:0}") double chatTemperature,
         @Value("${openai.embedding.model:text-embedding-3-small}") String embeddingModel
     ) {
         this.objectMapper = objectMapper;
         this.apiKey = apiKey;
         this.chatModel = chatModel;
+        this.chatTemperature = Math.max(0.0, Math.min(2.0, chatTemperature));
         this.embeddingModel = embeddingModel;
         this.httpClient = HttpClient.newBuilder()
             .connectTimeout(Duration.ofSeconds(20))
@@ -93,7 +96,7 @@ public class OpenAiClient {
         try {
             JsonNode payload = objectMapper.createObjectNode()
                 .put("model", chatModel)
-                .put("temperature", 0.2)
+                .put("temperature", chatTemperature)
                 .set("messages", objectMapper.createArrayNode()
                     .add(objectMapper.createObjectNode()
                         .put("role", "system")

@@ -1,4 +1,4 @@
-﻿package com.nebulasur.demomagic.model;
+package com.nebulasur.demomagic.model;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-﻿package com.nebulasur.demomagic.dto;
+package com.nebulasur.demomagic.dto;
 
 public class ChatAction {
     private String type;

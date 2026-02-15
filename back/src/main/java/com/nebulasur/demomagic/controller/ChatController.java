@@ -1,4 +1,4 @@
-﻿package com.nebulasur.demomagic.controller;
+package com.nebulasur.demomagic.controller;
 
 import com.nebulasur.demomagic.dto.ChatRequest;
 import com.nebulasur.demomagic.dto.ChatResponse;

@@ -1,0 +1,116 @@
+﻿ID: C-00
+TITLE: MotoRecambio Atlas - Perfil corporativo
+TYPE: empresa
+DESCRIPTION: MotoRecambio Atlas es una empresa ficticia especializada en almacen y distribucion de piezas de vehiculos turismos, furgonetas y flotas ligeras. Fundada en 2011, opera en Espana peninsular con plataforma logistica central y red de reparto regional.
+BENEFITS: El cliente conoce rapidamente quien es la empresa, su capacidad de suministro y su cobertura operativa.
+USE_CASES: Presentacion de empresa, alcance geografico, capacidad logistica, contacto y lineas de negocio.
+PRICE: Sin coste
+NOTES: Direccion central: Poligono Industrial La Estrella, Nave 12, Zaragoza. Telefono: +34 976 550 410. Email: ventas@motorecambioatlas.demo. Horario: L-V 08:00-19:00.
+
+ID: C-01
+TITLE: Catalogo de frenos y suspension multimarca
+TYPE: producto
+DESCRIPTION: Suministro de pastillas, discos, kits de freno, amortiguadores y componentes de suspension para marcas europeas y asiaticas. Incluye equivalencias por referencia OEM.
+BENEFITS: Reduce tiempos de busqueda y mejora la precision en pedidos de taller.
+USE_CASES: Talleres independientes, redes multimarca y recambio rapido.
+PRICE: Desde 18 EUR por unidad
+NOTES: Disponibilidad media superior al 92 por ciento en referencias de alta rotacion.
+
+ID: C-02
+TITLE: Recambios de motor y filtros
+TYPE: producto
+DESCRIPTION: Filtros de aceite, aire y combustible, correas, kits de distribucion, bombas de agua y componentes de mantenimiento preventivo.
+BENEFITS: Cobertura completa para mantenimiento periodico con entrega rapida.
+USE_CASES: Talleres con mantenimiento recurrente y flotas con plan de servicio.
+PRICE: Desde 9 EUR por unidad
+NOTES: Opcion de packs de mantenimiento por modelo y kilometraje.
+
+ID: C-03
+TITLE: Linea electrica y baterias
+TYPE: producto
+DESCRIPTION: Baterias, alternadores, motores de arranque, sensores y componentes electricos de diagnostico frecuente.
+BENEFITS: Menos vehiculos parados por falta de pieza critica y mejor tiempo de reparacion.
+USE_CASES: Talleres de electromecanica y servicio rapido.
+PRICE: Desde 14 EUR por unidad
+NOTES: Garantia comercial de 12 a 24 meses segun fabricante.
+
+ID: C-04
+TITLE: Repuestos de carroceria e iluminacion
+TYPE: producto
+DESCRIPTION: Faros, pilotos, retrovisores, paragolpes y piezas exteriores para reparacion rapida post-siniestro o desgaste.
+BENEFITS: Amplia oferta visual y funcional para reducir esperas en chapa y pintura.
+USE_CASES: Talleres de carroceria, centros de reparacion y aseguradoras.
+PRICE: Desde 22 EUR por unidad
+NOTES: Consulta por VIN para compatibilidad exacta.
+
+ID: C-05
+TITLE: Servicio de busqueda por VIN y referencia OEM
+TYPE: servicio
+DESCRIPTION: Equipo tecnico que valida compatibilidad de pieza mediante bastidor, version de motor y codigos de fabricante antes de confirmar el pedido.
+BENEFITS: Disminuye errores de envio y devoluciones por incompatibilidad.
+USE_CASES: Talleres con alto volumen diario y vehiculos de distintas generaciones.
+PRICE: 0 EUR (incluido en cuenta profesional)
+NOTES: Respuesta habitual en menos de 30 minutos en horario laboral.
+
+ID: C-06
+TITLE: Entrega urgente para talleres y flotas
+TYPE: servicio
+DESCRIPTION: Logistica express con ventanas de entrega en el mismo dia en zonas metropolitanas y 24 horas para resto de peninsula.
+BENEFITS: Reduce tiempo de inmovilizacion del vehiculo y mejora la productividad del taller.
+USE_CASES: Reparaciones urgentes, flotas operativas y picos de demanda.
+PRICE: Desde 7 EUR por envio
+NOTES: Cobertura same-day en Madrid, Barcelona, Zaragoza, Valencia y Sevilla.
+
+ID: C-07
+TITLE: Portal B2B de pedidos y seguimiento
+TYPE: app
+DESCRIPTION: Plataforma para consultar stock, precio neto, equivalencias, estado de pedido y facturacion en tiempo real.
+BENEFITS: Agiliza compra recurrente y da visibilidad completa del ciclo de pedido.
+USE_CASES: Talleres con varias sedes, distribuidores y compras centralizadas.
+PRICE: 39 EUR/mes por cuenta
+NOTES: Incluye roles por usuario y exportacion de historico.
+
+ID: C-08
+TITLE: Programa de suministro para flotas
+TYPE: plan
+DESCRIPTION: Acuerdo de suministro con precios escalados por volumen, SLA de entrega, reposicion planificada y reporte mensual de consumo.
+BENEFITS: Control de coste por vehiculo, menos roturas de stock y mayor continuidad operativa.
+USE_CASES: Flotas de reparto, movilidad corporativa y rent-a-car.
+PRICE: Desde 1.200 EUR/mes
+NOTES: Incluye gestor de cuenta y revisiones quincenales.
+
+ID: C-09
+TITLE: Formacion tecnica para recepcion y recambista
+TYPE: formacion
+DESCRIPTION: Taller practico sobre identificacion de pieza, equivalencias, lectura de catalogos y gestion de objeciones tecnicas con cliente final.
+BENEFITS: Menos incidencias en mostrador y mejor conversion de presupuestos.
+USE_CASES: Equipos de recepcion de taller y personal de recambios.
+PRICE: 690 EUR por sesion
+NOTES: Formato presencial u online con casos reales.
+
+ID: C-10
+TITLE: Casos de exito ficticios MotoRecambio Atlas
+TYPE: caso
+DESCRIPTION: Caso 1 red de talleres en Madrid redujo 33 por ciento el tiempo medio de reparacion al usar entrega urgente y validacion VIN. Caso 2 flota de ultima milla redujo 21 por ciento coste anual de recambios con plan de suministro. Caso 3 distribuidor regional aumento 28 por ciento rotacion de stock con portal B2B.
+BENEFITS: Permite al cliente visualizar impacto real en coste, tiempo y productividad.
+USE_CASES: Preguntas sobre ROI, referencias y resultados esperados.
+PRICE: Sin coste
+NOTES: Datos ficticios para demostracion comercial.
+
+ID: C-11
+TITLE: Politica de devoluciones y garantia
+TYPE: soporte
+DESCRIPTION: Gestion de devoluciones por error de referencia, garantia de fabricante y reposicion prioritaria de piezas criticas.
+BENEFITS: Reduce riesgo operativo y protege la rentabilidad del taller.
+USE_CASES: Incidencias de compatibilidad o fallos de componente.
+PRICE: Segun tipo de incidencia
+NOTES: Devolucion estandar en 14 dias para piezas sin montaje y condiciones de garantia por marca.
+
+ID: C-12
+TITLE: FAQ comercial y contacto especializado
+TYPE: faq
+DESCRIPTION: Preguntas frecuentes sobre stock real, compatibilidad por VIN, tiempos de entrega, descuentos por volumen, cobertura geografica y condiciones de pago profesional.
+BENEFITS: Resuelve dudas de preventa y acelera alta de cuenta profesional.
+USE_CASES: Primer contacto de talleres y gestores de flota.
+PRICE: Sin coste
+NOTES: Si necesitas una respuesta tecnica avanzada, Marta Velasco (Responsable de Operaciones de Recambios) te contacta con propuesta personalizada.

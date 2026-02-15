@@ -1,4 +1,4 @@
-﻿package com.nebulasur.demomagic.dto;
+package com.nebulasur.demomagic.dto;
 
 import jakarta.validation.constraints.NotBlank;
 
